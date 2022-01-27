@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material';
+import { CountryList } from 'components/sections';
 
-const HomePage = () => <Typography variant="h1">HomePage</Typography>;
+const HomePage = () => <CountryList />;
 
 export default HomePage;
