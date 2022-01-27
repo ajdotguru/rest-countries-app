@@ -8,6 +8,7 @@ import { theme } from 'app/theme';
 import { Layout } from 'components/sections';
 
 const HomePage = lazy(() => import('components/pages/Home'));
+const CountryDetailsPage = lazy(() => import('components/pages/CountryDetails'));
 
 export const App = () => {
 	const queryClient = new QueryClient();
@@ -24,6 +25,14 @@ export const App = () => {
 								element={
 									<Suspense fallback={<>...</>}>
 										<HomePage />
+									</Suspense>
+								}
+							/>
+							<Route
+								path=":countryName"
+								element={
+									<Suspense fallback={<>...</>}>
+										<CountryDetailsPage />
 									</Suspense>
 								}
 							/>
