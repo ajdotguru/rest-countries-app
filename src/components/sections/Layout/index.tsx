@@ -5,7 +5,7 @@ import { Header } from 'components/sections';
 export const Layout = () => (
 	<>
 		<Header />
-		<Container maxWidth="xl">
+		<Container maxWidth="xl" sx={{ marginTop: 4 }}>
 			<Outlet />
 		</Container>
 	</>
